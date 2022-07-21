@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- parallel test: suite name="Suite" parallel =test"> -->
+
+
+  
+  <listeners>
+  <listener class-name="academy.Listeners"></listener>
+  </listeners>
+
+
+
+
+
+
+
+
+  <test thread-count="5" name="TestLogin">
+  
+  <!-- Wrap test so browser closes after every run -->
+    <classes>
+      <class name="academy.LoginTest"/>
+    </classes>
+    </test>
+     
+     <test name="TestClever">
+      <classes>
+      <class name="academy.AssertCleverbuttonTest"/> 
+       </classes>
+       
+  
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+ <!--   <class name="academy.ValidateNavigationTest"/> -->
+  <!--    <class name="academy.CourseTitleTest"/>  -->

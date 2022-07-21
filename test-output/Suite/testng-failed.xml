@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="academy.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="TestLogin(failed)">
+    <classes>
+      <class name="academy.LoginTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="LoginNavigation"/>
+        </methods>
+      </class> <!-- academy.LoginTest -->
+    </classes>
+  </test> <!-- TestLogin(failed) -->
+  <test thread-count="5" name="TestClever(failed)">
+    <classes>
+      <class name="academy.AssertCleverbuttonTest">
+        <methods>
+          <include name="VerifyLoginWithClever"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- academy.AssertCleverbuttonTest -->
+    </classes>
+  </test> <!-- TestClever(failed) -->
+</suite> <!-- Failed suite [Suite] -->
